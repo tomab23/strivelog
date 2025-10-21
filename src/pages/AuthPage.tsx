@@ -12,9 +12,10 @@ const AuthPage = ({ login } : Props) => {
       <div className="flex min-h-svh flex-col items-center justify-center">
         <div className="w-[60%] max-sm:w-[92%] h-[35rem] border-4 rounded-xl flex">
           <div className=" flex-1 max-lg:hidden flex justify-center">
+            {/* TODO caroussel illustration login  */} 
             <img src={login ? image : welcome} alt="image" className="h-[100%]" />
           </div>
-          <div className="bg-card flex-1 flex flex-col items-center justify-center gap-20 max-sm:px-5">
+          <div className="bg-card flex-1 flex flex-col items-center justify-center gap-20 max-sm:px-5 max-xl:px-2">
             <h1 className="text-2xl font-semibold">{login ? "Log in to Strivelog 💪" : "Welcome in Strivelog 💪"}</h1>
             <AuthComponent login={login} />
              {login ? 
