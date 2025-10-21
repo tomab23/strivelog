@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import image from "../assets/sportimg.svg"
+import image from "../assets/run2.svg"
 import welcome from "../assets/welcome2.svg"
 import AuthComponent from "@/components/auth/AuthComponent";
 
@@ -10,7 +10,7 @@ const AuthPage = ({ login } : Props) => {
   return (
     <div>
       <div className="flex min-h-svh flex-col items-center justify-center">
-        <div className="w-[70%] max-sm:w-[92%] h-[35rem] border-4 rounded-xl flex">
+        <div className="w-[60%] max-sm:w-[92%] h-[35rem] border-4 rounded-xl flex">
           <div className=" flex-1 max-lg:hidden flex justify-center">
             <img src={login ? image : welcome} alt="image" className="h-[100%]" />
           </div>
