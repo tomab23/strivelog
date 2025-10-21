@@ -7,7 +7,8 @@ const RouterApp = () => {
     // <Suspense fallback={<div>Chargement...</div>} ></Suspense>
     <Routes>
       {/* PUBLIC */}
-      <Route path="/" element={<AuthPage />} />
+      <Route path="/" element={<AuthPage login />} />
+      <Route path="/register" element={<AuthPage login={false} />} />
       <Route path="/home" element={<HomePage />} />
       {/* TEST */}
     </Routes>
